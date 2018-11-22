@@ -7,7 +7,7 @@ def deal_card
   num
 end
 
-def display_card_total(card)
+def display_card_total(initial_round)
   puts "Your cards add up to #{card}"
 end
 
