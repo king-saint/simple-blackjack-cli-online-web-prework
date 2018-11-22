@@ -34,14 +34,15 @@ def initial_round
 end
 
 def hit?(num)
-  prompt_user
-  get_user_input
-  if answer == 'h'
-    display_card_total(sum = deal_card)
-  elsif answer == 's'
     prompt_user
-  else
-    invalid_command
+    get_user_input
+      if answer == 'h'
+        display_card_total(deal_card)
+        
+      elsif answer == 's'
+        prompt_user
+      else
+        invalid_command
   end
 end
 
@@ -55,6 +56,6 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
 end
     
