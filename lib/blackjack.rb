@@ -14,9 +14,7 @@ end
 def prompt_user
   puts "Type 'h' to hit or 's' to stay."
   answer = gets.chomp
-  if answer == 'h' 
-    
-  else
+  
 end
 
 def get_user_input
@@ -30,7 +28,10 @@ end
 def initial_round
   num1 = deal_card
   num2 = deal_card
-  num1 + num2
+  sum = num1 + num2
+  
+    display_card_total(sum)
+  
 end
 
 def hit?
