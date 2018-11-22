@@ -34,11 +34,12 @@ def initial_round
 end
 
 def hit?(num)
-  # code hit? here
+  prompt_user
+  get_user_input
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "please enter a valid command"
 end
 
 #####################################################
