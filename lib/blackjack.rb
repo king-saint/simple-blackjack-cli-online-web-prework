@@ -37,12 +37,11 @@ end
 def hit?(sum)
     prompt_user
     get_user_input
-        if get_user_input == 'h'
+        if get_user_input == 's'
+            return sum
+        elsif get_user_input == 'h'
             sum = sum + deal_card
             return sum
-        elsif get_user_input == 's'
-            return sum
-        
         else
             invalid_command
       end
