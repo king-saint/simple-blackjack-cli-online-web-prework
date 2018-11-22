@@ -7,9 +7,9 @@ def deal_card
   num
 end
 
-def display_card_total(initial_round)
-  puts "Your cards add up to #{card}"
-end
+def display_card_total(sum)
+  puts "Your cards add up to #{sum}"
+  return sum
 
 def prompt_user
   puts "Type 'h' to hit or 's' to stay."
