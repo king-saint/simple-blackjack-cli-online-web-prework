@@ -4,10 +4,11 @@ end
 
 def deal_card
   num = rand(1-11)
+  num
 end
 
 def display_card_total(card)
-  puts "You "
+  puts "Your cards add up to #{card}."
 end
 
 def prompt_user
