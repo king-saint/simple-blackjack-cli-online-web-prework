@@ -10,10 +10,11 @@ end
 def display_card_total(sum)
   puts "Your cards add up to #{sum}"
   return sum
+end
+
 
 def prompt_user
   puts "Type 'h' to hit or 's' to stay."
- 
 end
 
 def get_user_input
@@ -30,7 +31,6 @@ def initial_round
   sum = num1 + num2
   
     display_card_total(sum)
-  
 end
 
 def hit?(num)
